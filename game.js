@@ -12,6 +12,14 @@ $(document).keydown(function() {
     }
 })
 
+$("#btnRejouer").click(function() {
+    if (! gameRunning) {
+        gameRunning = true;
+        $("h1").text("Niveau 0");
+        prochaineSequence();
+    }
+})
+
 function prochaineSequence() {
     userClickedPattern = [];
 
@@ -73,4 +81,3 @@ $(".btn").click(function (event) {
 
     checkAnswer(userClickedPattern.length-1);
 });
-
