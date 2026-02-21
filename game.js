@@ -56,6 +56,7 @@ function checkAnswer(currentLevel) {
         playSound("wrong");
         $("h1").text("Perdu, appuyer sur une touche pour recommencer");
         $("body").addClass("game-over");
+        $("#btnRejouer").text("REJOUER");
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200)

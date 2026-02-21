@@ -54,7 +54,8 @@ body {
 
 #btnRejouer {
   padding: 20px;
-  width: 250px;
+  text-align: center;
+  min-width: 250px;
   border-radius: 10%;
   border: 5px solid black;
   font-size: 2rem;
